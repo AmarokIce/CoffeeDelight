@@ -64,10 +64,8 @@ public class Coffee {
         return new BlockCoffee(hunger, saturation, cap, effects, time, level);
     }
      */
-    private final RegistryObject<Item> coffeeMag;
-    private final RegistryObject<Item> coffeeCap;
-    private final RegistryObject<Block> blockMag;
-    private final RegistryObject<Block> blockCap;
+    private RegistryObject<Item> coffeeMag, coffeeCap;
+    private RegistryObject<Block> blockMag, blockCap;
 
     public Coffee(RegistryObject<Item> mag, RegistryObject<Item> cap, RegistryObject<Block> bMag, RegistryObject<Block> bCap) {
         this.coffeeMag = mag;

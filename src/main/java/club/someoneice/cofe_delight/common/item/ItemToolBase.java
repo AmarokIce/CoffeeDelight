@@ -5,18 +5,26 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
 public class ItemToolBase extends Item {
-    public ItemToolBase() {
-        super(new Properties());
+    ItemStack returnItem;
+
+    public ItemToolBase(int damage, ItemStack returnItem) {
+        super(new Properties().tab(CoffeeDelight.COFFEE).defaultDurability(damage));
+        this.returnItem = returnItem == null ? ItemStack.EMPTY : returnItem;
     }
 
     @Override
-    public ItemStack getCraftingRemainingItem(ItemStack itemStack) {
-        return this.getDefaultInstance();
+    public ItemStack getContainerItem(ItemStack itemStack) {
+        if (itemStack.getDamageValue() >= itemStack.getMaxDamage())
+            return this.returnItem;
+        else {
+            itemStack.setDamageValue(itemStack.getDamageValue() + 1);
+            return itemStack;
+        }
     }
 
     @Override
-    public boolean hasCraftingRemainingItem() {
+    public boolean hasContainerItem(ItemStack stack)
+    {
         return true;
     }
-
 }

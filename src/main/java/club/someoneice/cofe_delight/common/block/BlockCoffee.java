@@ -1,6 +1,5 @@
 package club.someoneice.cofe_delight.common.block;
 
-import club.someoneice.cofe_delight.CoffeeDelight;
 import club.someoneice.cofe_delight.init.BlockInit;
 import club.someoneice.cofe_delight.util.BlockBean;
 import net.minecraft.core.BlockPos;
@@ -51,13 +50,10 @@ public class BlockCoffee extends BlockCap {
             for (MobEffect effect : this.effects)
                 player.addEffect(new MobEffectInstance(effect, time, level));
 
-        // if (CoffeeDelight.isFarmersRespitInstall)
-        //     player.addEffect(new MobEffectInstance(FREffects.CAFFEINATED.get(), time, level));
-
         if (hasSugar) player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 20 * 30, 1));
         switch (cap) {
-            case CAP -> world.setBlock(pos, BlockInit.COFFEE_CAP.get().withPropertiesOf(state), 0);
-            case  MAG -> world.setBlock(pos, BlockInit.COFFEE_MAG.get().withPropertiesOf(state), 0);
+            case CAP -> world.setBlock(pos, BlockInit.COFFEE_CAP.get().defaultBlockState(), 0);
+            case  MAG -> world.setBlock(pos, BlockInit.COFFEE_MAG.get().defaultBlockState(), 0);
         }
 
         return InteractionResult.SUCCESS;

@@ -7,6 +7,7 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.Material;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -15,12 +16,12 @@ import vectorwing.farmersdelight.common.block.PieBlock;
 public class BlockInit {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CoffeeDelight.MODID);
 
-    public static final RegistryObject<Block> COFFEE_PIE = BLOCKS.register("coffee_pie",  () -> new PieBlock(BlockBehaviour.Properties.of(),ItemInit.COFFEE_PIE_SIDE));
+    public static final RegistryObject<Block> COFFEE_PIE = BLOCKS.register("coffee_pie",  () -> new PieBlock(BlockBehaviour.Properties.of(Material.CAKE),ItemInit.COFFEE_PIE_SIDE));
     public static final RegistryObject<Block> COFFEE_CAP = BLOCKS.register("coffee_cap", BlockCap::new);
     public static final RegistryObject<Block> COFFEE_MAG = BLOCKS.register("coffee_mag", BlockCap::new);
     public static final RegistryObject<Block> COFFEE_BUSH = BLOCKS.register("coffee_bush", CoffeeBush::new);
     // public static final RegistryObject<Block> COFFEE_WILD_BUSH = BLOCKS.register("coffee_wild_bush", () -> new Block(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH)));
-    public static final RegistryObject<Block> COFFEE_BLOCK = BLOCKS.register("coffee_block", () -> new Block(BlockBehaviour.Properties.of()));
+    public static final RegistryObject<Block> COFFEE_BLOCK = BLOCKS.register("coffee_block", () -> new Block(BlockBehaviour.Properties.of(Material.PLANT)));
 
 
     public static final RegistryObject<Block> CUCCUMELA_POT = BLOCKS.register("cuccumela_pot", CoffeeCuccumelaPot::new);

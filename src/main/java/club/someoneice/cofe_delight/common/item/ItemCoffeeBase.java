@@ -2,6 +2,7 @@ package club.someoneice.cofe_delight.common.item;
 
 import club.someoneice.cofe_delight.CoffeeDelight;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -26,7 +27,7 @@ public class ItemCoffeeBase extends BlockItem {
     int time, level;
 
     public ItemCoffeeBase(Block block, int hunger, float saturation, ItemStack returnItem, MobEffect[] effects, int time, int level) {
-        super(block, new Properties().food(new FoodProperties.Builder().nutrition(hunger).saturationMod(saturation).alwaysEat().build()));
+        super(block, new Properties().tab(CoffeeDelight.COFFEE).food(new FoodProperties.Builder().nutrition(hunger).saturationMod(saturation).alwaysEat().build()));
         this.returnItem = returnItem == null ? ItemStack.EMPTY : returnItem;
         this.effects = effects;
         this.time = time;
@@ -50,21 +51,19 @@ public class ItemCoffeeBase extends BlockItem {
     }
 
     @Override
-    public ItemStack finishUsingItem(ItemStack item, Level world, LivingEntity user) {
-        super.finishUsingItem(item, world, user);
-        if (user instanceof Player player) {
-            player.addItem(returnItem);
+    public ItemStack finishUsingItem(ItemStack item, Level world, LivingEntity player) {
+        super.finishUsingItem(item, world, player);
+        if (player instanceof Player && this.returnItem != ItemStack.EMPTY) {
+            ((Player) player).addItem(returnItem);
             if (this.effects != null)
                 for (MobEffect effect : effects)
                     player.addEffect(new MobEffectInstance(effect, time, level));
-            // if (CoffeeDelight.isFarmersRespitInstall)
-            //     player.addEffect(new MobEffectInstance(FREffects.CAFFEINATED.get(), time, level));
         }
 
         return item;
     }
 
     public void appendHoverText(ItemStack item, @Nullable Level world, List<Component> list, TooltipFlag flag) {
-        list.add(Component.translatable("cofe.putOrEat.message"));
+        list.add(new TranslatableComponent("cofe.putOrEat.message"));
     }
 }
