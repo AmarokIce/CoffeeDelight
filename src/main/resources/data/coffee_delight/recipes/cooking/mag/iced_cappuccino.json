@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cooking",
+  "recipe_book_tab": "drinks",
+  "ingredients": [
+    {
+      "item": "coffee_delight:mag_cappuccino"
+    },
+    {
+      "item": "minecraft:snowball"
+    }
+  ],
+  "result": {
+    "item": "coffee_delight:mag_iced_cappuccino"
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}

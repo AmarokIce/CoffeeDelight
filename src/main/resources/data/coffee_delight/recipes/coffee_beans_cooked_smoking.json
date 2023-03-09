@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "coffee_delight:coffee_beans"
+  },
+  "result": "coffee_delight:coffee_beans_cooked",
+  "experience": 0.35,
+  "cookingtime": 200
+}
