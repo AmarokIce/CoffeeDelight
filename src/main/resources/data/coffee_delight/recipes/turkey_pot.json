@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coffee_delight:turkey_handel"
+    },
+    {
+      "item": "coffee_delight:turkey_pot_part"
+    }
+  ],
+  "result": {
+    "item": "coffee_delight:turkey_pot"
+  }
+}

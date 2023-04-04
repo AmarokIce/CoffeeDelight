@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coffee_delight:wafer"
+    },
+    {
+      "item": "coffee_delight:wafer"
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    }
+  ],
+  "result": {
+    "item": "coffee_delight:berries_wafer",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coffee_delight:coffee_flour"
+    },
+    {
+      "item": "coffee_delight:coffee_flour"
+    },
+    {
+      "item": "coffee_delight:coffee_flour"
+    },
+    {
+      "item": "coffee_delight:coffee_flour"
+    },
+    {
+      "item": "farmersdelight:pie_crust"
+    }
+  ],
+  "result": {
+    "item": "coffee_delight:coffee_pie",
+    "count": 1
+  }
+}

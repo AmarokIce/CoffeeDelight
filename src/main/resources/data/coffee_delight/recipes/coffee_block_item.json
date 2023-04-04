@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coffee_delight:coffee_beans"
+    },
+    {
+      "item": "coffee_delight:coffee_beans"
+    },
+    {
+      "item": "coffee_delight:coffee_beans"
+    },
+    {
+      "item": "coffee_delight:coffee_beans"
+    },
+    {
+      "item": "coffee_delight:coffee_beans"
+    },
+    {
+      "item": "coffee_delight:coffee_beans"
+    },
+    {
+      "item": "coffee_delight:coffee_beans"
+    },
+    {
+      "item": "coffee_delight:coffee_beans"
+    },
+    {
+      "item": "coffee_delight:coffee_beans"
+    }
+  ],
+  "result": {
+    "item": "coffee_delight:coffee_block_item",
+    "count": 1
+  }
+}

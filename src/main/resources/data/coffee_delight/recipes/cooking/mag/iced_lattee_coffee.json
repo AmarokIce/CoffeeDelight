@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cooking",
+  "recipe_book_tab": "drinks",
+  "ingredients": [
+    {
+      "item": "coffee_delight:mag_latte_coffee"
+    },
+    {
+      "item": "minecraft:snowball"
+    }
+  ],
+  "result": {
+    "item": "coffee_delight:mag_iced_lattee_coffee"
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}

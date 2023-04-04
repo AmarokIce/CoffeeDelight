@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "coffee_delight",
+  "version": "${version}",
+
+  "name": "Coffee Delight",
+  "description": "",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "Pineapple",
+  "icon": "",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "club.someoneice.cofe_delight.CoffeeDelight"
+    ]
+  },
+  "mixins": [
+    "coffee_delight.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.19.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
