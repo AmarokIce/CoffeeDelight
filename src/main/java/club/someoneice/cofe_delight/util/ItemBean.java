@@ -20,8 +20,8 @@ public class ItemBean {
         return new BlockItem(block, properties());
     }
 
-    public static Item itemTool(int damage, ItemStack returnItem) {
-        return new ItemToolBase(damage, returnItem);
+    public static Item itemTool() {
+        return new ItemToolBase();
     }
 
     public static Item itemFood(int hunger, float saturation) {

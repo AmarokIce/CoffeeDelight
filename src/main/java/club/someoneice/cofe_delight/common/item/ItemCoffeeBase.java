@@ -1,6 +1,7 @@
 package club.someoneice.cofe_delight.common.item;
 
 import club.someoneice.cofe_delight.CoffeeDelight;
+import com.farmersrespite.core.registry.FREffects;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.InteractionResult;
@@ -58,6 +59,8 @@ public class ItemCoffeeBase extends BlockItem {
             if (this.effects != null)
                 for (MobEffect effect : effects)
                     player.addEffect(new MobEffectInstance(effect, time, level));
+            if (CoffeeDelight.isFarmersRespitInstall)
+                player.addEffect(new MobEffectInstance(FREffects.CAFFEINATED.get(), time, level));
         }
 
         return item;

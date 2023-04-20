@@ -20,7 +20,7 @@ public class ItemInit {
 
     // CoffeeInit Beans
     public static final RegistryObject<Item> COFFEE_BERRIES = ITEMS.register("coffee_berries", () -> ItemBean.itemBlock(BlockInit.COFFEE_BUSH.get()));
-    public static final RegistryObject<Item> COFFEE_FLOUR = ITEMS.register("coffee_flour", () -> ItemBean.itemItem());
+    public static final RegistryObject<Item> COFFEE_FLOUR = ITEMS.register("coffee_flour", ItemBean::itemItem);
     public static final RegistryObject<Item> COFFEE_BEANS = ITEMS.register("coffee_beans", () -> ItemBean.itemFood(1, 0.1F));
     public static final RegistryObject<Item> COFFEE_BEANS_COOKED = ITEMS.register("coffee_beans_cooked", () -> ItemBean.itemFood(1, 0.1F));
     public static final RegistryObject<Item> COFFEE_BLOCK = ITEMS.register("coffee_block_item", () -> ItemBean.itemBlock(BlockInit.COFFEE_BLOCK.get()));
@@ -35,23 +35,23 @@ public class ItemInit {
 
     // Items
     /* Cuccumela */
-    public static final RegistryObject<Item> CUCCUMELA_TOP = ITEMS.register("cuccumela_top", () -> ItemBean.itemItem());
-    public static final RegistryObject<Item> CUCCUMELA_BOTTOM = ITEMS.register("cuccumela_bottom", () -> ItemBean.itemItem());
+    public static final RegistryObject<Item> CUCCUMELA_TOP = ITEMS.register("cuccumela_top", ItemBean::itemItem);
+    public static final RegistryObject<Item> CUCCUMELA_BOTTOM = ITEMS.register("cuccumela_bottom", ItemBean::itemItem);
     public static final RegistryObject<Item> CUCCUMELA_POT = ITEMS.register("cuccumela_pot", () -> ItemBean.itemBlock(BlockInit.CUCCUMELA_POT.get()));
 
     /* Moka Pot */
-    public static final RegistryObject<Item> MOKA_TOP = ITEMS.register("moka_top", () -> ItemBean.itemItem());
-    public static final RegistryObject<Item> MOKA_BOTTOM = ITEMS.register("moka_bottom", () -> ItemBean.itemItem());
+    public static final RegistryObject<Item> MOKA_TOP = ITEMS.register("moka_top", ItemBean::itemItem);
+    public static final RegistryObject<Item> MOKA_BOTTOM = ITEMS.register("moka_bottom", ItemBean::itemItem);
     public static final RegistryObject<Item> MOKA_POT = ITEMS.register("moka_pot", () -> ItemBean.itemBlock(BlockInit.MOKA_POT.get()));
     /* Balancing Siphon ( TODO ) */
-    public static final RegistryObject<Item> BALACING_SIPHON = ITEMS.register("balacing_siphon", () -> ItemBean.itemItem());
+    public static final RegistryObject<Item> BALACING_SIPHON = ITEMS.register("balacing_siphon", ItemBean::itemItem);
 
     /* Mr.Clever */
-    public static final RegistryObject<Item> Clever = ITEMS.register("mr_clever", () -> ItemBean.itemTool(50, ItemStack.EMPTY));
+    public static final RegistryObject<Item> Clever = ITEMS.register("mr_clever", ItemBean::itemTool);
 
     /* Turkey CoffeeInit Pot */
-    public static final RegistryObject<Item> TURKEY_HANDEL = ITEMS.register("turkey_handel", () -> ItemBean.itemItem());
-    public static final RegistryObject<Item> TURKEY_POT_PART = ITEMS.register("turkey_pot_part", () -> ItemBean.itemItem());
+    public static final RegistryObject<Item> TURKEY_HANDEL = ITEMS.register("turkey_handel", ItemBean::itemItem);
+    public static final RegistryObject<Item> TURKEY_POT_PART = ITEMS.register("turkey_pot_part", ItemBean::itemItem);
     public static final RegistryObject<Item> TURKEY_POT = ITEMS.register("turkey_pot", () -> ItemBean.itemBlock(BlockInit.TURKEY_POT.get()));
 
     // Cap
