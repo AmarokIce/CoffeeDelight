@@ -16,9 +16,9 @@ plugins {
 apply plugin: 'net.minecraftforge.gradle'
 // apply plugin: 'org.spongepowered.mixin'
 
-version = '1.0'
+version = '1.3'
 group = 'club.someoneice.coffee_delight'
-archivesBaseName = 'CoffeeDelight'
+archivesBaseName = 'CoffeeDelight-Forge-1.18.2'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
@@ -94,12 +94,7 @@ repositories {
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.18.2-40.1.60'
-    // implementation fg.deobf("curse.maven:farmers_delight-398521:3999153")
-    implementation "vectorwing.farmersdelight:FarmersDelight-1.18.2-1.2.0"
-    implementation "com.simibubi.create:create-1.18.2-0.5.0.i"
-    implementation "com.jozufozu.flywheel:flywheel-forge-1.18.2-0.6.8.a"
-    
-    // annotationProcessor "org.spongepowered:mixin:0.8.5:processor"
+    implementation fileTree(dir: 'libs', includes: ['*.jar'])
 }
 
 jar {
