@@ -52,7 +52,7 @@ public class ItemCoffeeBase extends BlockItem {
     @Override
     public ItemStack finishUsing(ItemStack item, World world, LivingEntity user) {
         super.finishUsing(item, world, user);
-        if (user instanceof PlayerEntity player&& this.returnItem != ItemStack.EMPTY) {
+        if (user instanceof PlayerEntity player && this.returnItem != ItemStack.EMPTY) {
             player.giveItemStack(returnItem);
             if (this.effects != null)
                 for (StatusEffect effect : effects)
