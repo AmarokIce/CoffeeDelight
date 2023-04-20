@@ -3,11 +3,13 @@ package club.someoneice.cofe_delight.common.gem;
 import club.someoneice.cofe_delight.CoffeeDelight;
 import club.someoneice.cofe_delight.init.BlockInit;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.util.registry.RegistryKey;
+import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.*;
@@ -15,9 +17,11 @@ import net.minecraft.world.gen.placementmodifier.BiomePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 
+import java.util.Collection;
 import java.util.List;
 
 public class WildCoffee {
+    public static Collection<RegistryKey<Biome>> DESERT = List.of(new RegistryKey[]{BiomeKeys.DESERT});
     public static void register() {
         var configId = new Identifier(CoffeeDelight.MODID, "wild_coffee_bush_feature");
         var configuredFeature = Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, configId, new ConfiguredFeature<>(Feature.RANDOM_PATCH, createRandomPatchFeatureConfig()));
@@ -27,7 +31,7 @@ public class WildCoffee {
                 new PlacedFeature(RegistryEntry.of(configuredFeature), List.of(SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of())));
         var featureRegistryKey = RegistryKey.of(Registry.PLACED_FEATURE_KEY, featureId);
 
-        BiomeModifications.addFeature(context -> context.getBiomeKey().equals(BiomeKeys.DESERT), GenerationStep.Feature.VEGETAL_DECORATION, featureRegistryKey);
+        BiomeModifications.addFeature(context -> BiomeSelectors.includeByKey(DESERT).test(context), GenerationStep.Feature.VEGETAL_DECORATION, featureRegistryKey);
     }
 
     private static RandomPatchFeatureConfig createRandomPatchFeatureConfig() {
