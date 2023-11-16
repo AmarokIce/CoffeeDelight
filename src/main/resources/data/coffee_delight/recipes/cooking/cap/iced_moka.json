@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cooking",
+  "recipe_book_tab": "drinks",
+  "ingredients": [
+    {
+      "item": "coffee_delight:cap_moka_coffee"
+    },
+    {
+      "item": "minecraft:snowball"
+    }
+  ],
+  "result": {
+    "item": "coffee_delight:cap_iced_moka"
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}

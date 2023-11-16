@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "coffee_delight:block/coffee_block"
+    }
+  }
+}
