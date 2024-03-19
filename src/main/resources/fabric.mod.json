@@ -6,7 +6,7 @@
   "name": "Coffee Delight",
   "description": "",
   "authors": [
-    "Me!"
+    "Someoneice"
   ],
   "contact": {
     "homepage": "",
@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "club.someoneice.cofe_delight.CoffeeDelight"
+    ],
+    "client": [
+      "club.someoneice.cofe_delight.CoffeeClientInit"
     ]
   },
   "mixins": [
@@ -29,7 +32,7 @@
   "depends": {
     "fabricloader": ">=0.13.3",
     "fabric": "*",
-    "minecraft": "1.19.x",
+    "minecraft": "1.20.x",
     "java": ">=17"
   },
   "suggests": {

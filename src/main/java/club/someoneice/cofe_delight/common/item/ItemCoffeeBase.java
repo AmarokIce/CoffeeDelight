@@ -1,6 +1,6 @@
 package club.someoneice.cofe_delight.common.item;
 
-import club.someoneice.cofe_delight.CoffeeDelight;
+import club.someoneice.cofe_delight.util.ItemBean;
 import net.minecraft.block.Block;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
@@ -10,9 +10,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.UseAction;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
@@ -24,13 +22,13 @@ public class ItemCoffeeBase extends BlockItem {
     int time, level;
 
     public ItemCoffeeBase(String name, Block block, int hunger, float saturation, ItemStack returnItem, StatusEffect[] effects, int time, int level) {
-        super(block, new Item.Settings().group(CoffeeDelight.COFFEE).food(new FoodComponent.Builder().hunger(hunger).saturationModifier(saturation).alwaysEdible().build()));
+        super(block, new Item.Settings().food(new FoodComponent.Builder().hunger(hunger).saturationModifier(saturation).alwaysEdible().build()));
         this.returnItem = returnItem == null ? ItemStack.EMPTY : returnItem;
         this.effects = effects;
         this.time = time;
         this.level = level;
 
-        Registry.register(Registry.ITEM, new Identifier(CoffeeDelight.MODID, name), this);
+        ItemBean.register(name, this);
     }
 
     public ItemCoffeeBase(String name, Block block, int hunger, float saturation, ItemStack returnItem) {

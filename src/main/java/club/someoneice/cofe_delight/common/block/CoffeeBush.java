@@ -8,6 +8,8 @@ import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
@@ -15,13 +17,12 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 
 public class CoffeeBush extends SweetBerryBushBlock {
     public CoffeeBush(String name) {
         super(Settings.copy(Blocks.SWEET_BERRY_BUSH));
-        Registry.register(Registry.BLOCK, new Identifier(CoffeeDelight.MODID, name), this);
+        Registry.register(Registries.BLOCK, new Identifier(CoffeeDelight.MODID, name), this);
     }
 
     @Override

@@ -2,11 +2,7 @@ package club.someoneice.cofe_delight.init;
 
 import club.someoneice.cofe_delight.common.block.*;
 import club.someoneice.cofe_delight.util.BlockBean;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.block.Block;
-import net.minecraft.client.render.RenderLayer;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffects;
 
@@ -60,9 +56,4 @@ public class BlockInit {
     public static final Block MAG_COCO             = new BlockCoffee("mag_coco",                    8, 0.6F, BlockBean.CAP.MAG);
     public static final Block MAG_ICED_COCO        = new BlockCoffee("mag_iced_coco",               9, 0.8F, BlockBean.CAP.MAG);
     public static final Block MAG_FAIL_COFFEE      = new BlockCoffee("mag_fail_coffee",             1, 0.1F, BlockBean.CAP.MAG, new StatusEffect[]{StatusEffects.HUNGER, StatusEffects.BAD_OMEN}, 20 * 60, 0);
-
-    @Environment(EnvType.CLIENT)
-    public static void registerRenderLayer() {
-        BlockRenderLayerMap.INSTANCE.putBlock(COFFEE_BUSH, RenderLayer.getCutout());
-    }
 }

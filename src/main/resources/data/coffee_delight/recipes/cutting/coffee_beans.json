@@ -6,8 +6,9 @@
     }
   ],
   "tool": {
-    "tag": "farmersdelight:tools/knives"
-  },
+    "type": "farmersdelight:tool",
+    "tag": "c:tools/knives"
+    },
   "result": [
     {
       "item": "coffee_delight:coffee_beans"

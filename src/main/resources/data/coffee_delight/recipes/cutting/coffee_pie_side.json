@@ -6,7 +6,8 @@
     }
   ],
   "tool": {
-    "tag": "farmersdelight:tools/knives"
+    "type": "farmersdelight:tool",
+    "tag": "c:tools/knives"
   },
   "result": [
     {

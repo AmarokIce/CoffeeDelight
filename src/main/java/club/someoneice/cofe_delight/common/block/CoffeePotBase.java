@@ -2,7 +2,6 @@ package club.someoneice.cofe_delight.common.block;
 
 import club.someoneice.cofe_delight.CoffeeDelight;
 import club.someoneice.cofe_delight.init.TileEntityInit;
-import net.minecraft.state.property.IntProperty;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
@@ -11,12 +10,14 @@ import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
+import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
@@ -27,8 +28,8 @@ public class CoffeePotBase extends BlockWithEntity {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
     public CoffeePotBase(String name) {
-        super(Settings.of(Material.STONE));
-        Registry.register(Registry.BLOCK, new Identifier(CoffeeDelight.MODID, name), this);
+        super(Settings.copy(Blocks.GLASS));
+        Registry.register(Registries.BLOCK, new Identifier(CoffeeDelight.MODID, name), this);
     }
 
     @Override
@@ -38,10 +39,9 @@ public class CoffeePotBase extends BlockWithEntity {
         world.spawnEntity(itemEntity);
     }
 
-    @javax.annotation.Nullable
     @Override
     public @org.jetbrains.annotations.Nullable BlockState getPlacementState(ItemPlacementContext context) {
-        return this.getDefaultState().with(FACING, context.getPlayerFacing().getOpposite());
+        return this.getDefaultState().with(FACING, context.getPlayerLookDirection().getOpposite());
     }
 
     @Override
@@ -68,6 +68,6 @@ public class CoffeePotBase extends BlockWithEntity {
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, TileEntityInit.COFFEE_POT, (world1, pos, state1, be) -> CoffeePotBlockEntity.tick(world1, pos, state1, be));
+        return checkType(type, TileEntityInit.COFFEE_POT, CoffeePotBlockEntity::tick);
     }
 }

@@ -3,11 +3,12 @@ package club.someoneice.cofe_delight.init;
 import club.someoneice.cofe_delight.common.item.ItemCoffeeBase;
 import club.someoneice.cofe_delight.common.item.ItemCoffeePie;
 import club.someoneice.cofe_delight.util.ItemBean;
-import net.minecraft.item.Item;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
+@SuppressWarnings("unused")
 public class ItemInit {
     // CoffeeInit Beans
     public static final Item COFFEE_BERRIES = ItemBean.itemBlock("coffee_berries", BlockInit.COFFEE_BUSH);
