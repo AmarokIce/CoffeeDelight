@@ -1,7 +1,7 @@
 package club.someoneice.cofe_delight;
 
-import club.someoneice.cofe_delight.init.FeatureInit;
 import club.someoneice.cofe_delight.init.BlockInit;
+import club.someoneice.cofe_delight.init.FeatureInit;
 import club.someoneice.cofe_delight.init.ItemInit;
 import club.someoneice.cofe_delight.init.TileEntityInit;
 import club.someoneice.cofe_delight.util.ItemBean;
