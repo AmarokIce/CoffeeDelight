@@ -1,7 +1,7 @@
 {
   "cofe.putOrEat.message": "右击食用，或蹲下放置。",
 
-  "itemGroup.coffee_delight": "咖啡乐事",
+  "item_group.coffee_delight": "咖啡乐事",
   "block.coffee_delight.coffee_bush": "咖啡浆果",
   "block.coffee_delight.coffee_block": "袋装咖啡豆",
   "item.coffee_delight.coffee_flour": "咖啡粉",
