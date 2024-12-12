@@ -21,9 +21,9 @@ public class CoffeeMokaPot extends CoffeePotBase {
             } else if (entity.isFinish) {
                 ItemStack itemInHand = player.getItemInHand(hand).copy();
 
-                if (itemInHand.is(ItemInit.MAG.get()))
+                if (itemInHand.is(ItemInit.MUG.get()))
                     itemInHand = entity.isFail ? new ItemStack(CoffeeInit.FAIL_COFFEE.getMagItem().get()) : new ItemStack(CoffeeInit.BLACK_COFFEE.getMagItem().get());
-                else if (itemInHand.is(ItemInit.CAP.get()))
+                else if (itemInHand.is(ItemInit.CUP.get()))
                     itemInHand = entity.isFail ? new ItemStack(CoffeeInit.FAIL_COFFEE.getCapItem().get()) : new ItemStack(CoffeeInit.BLACK_COFFEE.getCapItem().get());
                 else return InteractionResult.PASS;
 
