@@ -36,9 +36,9 @@ public class CoffeeTurkeyPot extends CoffeePotBase {
 
                 Coffee coffee = entity.hasSugar() ? CoffeeInit.TURKEY_COFFEE : CoffeeInit.ARABICA_COFFEE;
 
-                if (itemInHand.is(ItemInit.MAG.get()))
+                if (itemInHand.is(ItemInit.MUG.get()))
                     itemInHand = entity.isFail ? new ItemStack(CoffeeInit.FAIL_COFFEE.getMagItem().get()) : new ItemStack(coffee.getMagItem().get());
-                else if (itemInHand.is(ItemInit.CAP.get()))
+                else if (itemInHand.is(ItemInit.CUP.get()))
                     itemInHand = entity.isFail ? new ItemStack(CoffeeInit.FAIL_COFFEE.getCapItem().get()) : new ItemStack(coffee.getCapItem().get());
                 else return InteractionResult.PASS;
 

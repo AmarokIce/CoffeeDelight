@@ -5,6 +5,34 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.RegistryObject;
 
 public class Coffee {
+    private final RegistryObject<Item> coffeeMag;
+    private final RegistryObject<Item> coffeeCap;
+    private final RegistryObject<Block> blockMag;
+    private final RegistryObject<Block> blockCap;
+
+    public Coffee(RegistryObject<Item> mag, RegistryObject<Item> cap, RegistryObject<Block> bMag, RegistryObject<Block> bCap) {
+        this.coffeeMag = mag;
+        this.coffeeCap = cap;
+        this.blockMag = bMag;
+        this.blockCap = bCap;
+    }
+
+    public RegistryObject<Item> getMagItem() {
+        return coffeeMag;
+    }
+
+    public RegistryObject<Block> getMagBlock() {
+        return blockMag;
+    }
+
+    public RegistryObject<Item> getCapItem() {
+        return coffeeCap;
+    }
+
+    public RegistryObject<Block> getCapBlock() {
+        return blockCap;
+    }
+
     /*
     private String name;
     private int hunger, time, level;
@@ -64,30 +92,4 @@ public class Coffee {
         return new BlockCoffee(hunger, saturation, cap, effects, time, level);
     }
      */
-    private RegistryObject<Item> coffeeMag, coffeeCap;
-    private RegistryObject<Block> blockMag, blockCap;
-
-    public Coffee(RegistryObject<Item> mag, RegistryObject<Item> cap, RegistryObject<Block> bMag, RegistryObject<Block> bCap) {
-        this.coffeeMag = mag;
-        this.coffeeCap = cap;
-        this.blockMag = bMag;
-        this.blockCap = bCap;
-    }
-
-    public RegistryObject<Item> getMagItem() {
-        return coffeeMag;
-    }
-
-    public RegistryObject<Block> getMagBlock() {
-        return blockMag;
-    }
-
-    public RegistryObject<Item> getCapItem() {
-        return coffeeCap;
-    }
-
-    public RegistryObject<Block> getCapBlock() {
-        return blockCap;
-    }
-
 }

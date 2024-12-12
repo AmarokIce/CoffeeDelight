@@ -28,7 +28,7 @@ public class CoffeeBush extends SweetBerryBushBlock {
             return InteractionResult.PASS;
         } else if (i > 1) {
             popResource(world, pos, new ItemStack(ItemInit.COFFEE_BERRIES.get(), 1 + world.random.nextInt(2) + (i != 3 ? 1 : 0)));
-            world.playSound((Player)null, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + world.random.nextFloat() * 0.4F);
+            world.playSound(null, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + world.random.nextFloat() * 0.4F);
             world.setBlock(pos, state.setValue(AGE, 1), 2);
             return InteractionResult.sidedSuccess(world.isClientSide);
         } else {

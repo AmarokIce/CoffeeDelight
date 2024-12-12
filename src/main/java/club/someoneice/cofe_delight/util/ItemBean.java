@@ -1,6 +1,5 @@
 package club.someoneice.cofe_delight.util;
 
-import club.someoneice.cofe_delight.CoffeeDelight;
 import club.someoneice.cofe_delight.common.item.ItemDrinkWithEffectBase;
 import club.someoneice.cofe_delight.common.item.ItemToolBase;
 import net.minecraft.world.effect.MobEffect;
@@ -41,6 +40,6 @@ public class ItemBean {
     }
 
     private static Item.Properties properties() {
-        return new Item.Properties().tab(CoffeeDelight.COFFEE);
+        return new Item.Properties();
     }
 }

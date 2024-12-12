@@ -1,22 +1,21 @@
 package club.someoneice.cofe_delight.common.item;
 
-import club.someoneice.cofe_delight.CoffeeDelight;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
 public class ItemToolBase extends Item {
     public ItemToolBase() {
-        super(new Properties().tab(CoffeeDelight.COFFEE));
+        super(new Properties());
     }
 
     @Override
-    public ItemStack getContainerItem(ItemStack itemStack) {
+    public ItemStack getCraftingRemainingItem(ItemStack itemStack) {
         return this.getDefaultInstance();
     }
 
     @Override
-    public boolean hasContainerItem(ItemStack stack)
-    {
+    public boolean hasCraftingRemainingItem() {
         return true;
     }
+
 }

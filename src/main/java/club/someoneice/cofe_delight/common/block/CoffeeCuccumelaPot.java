@@ -21,9 +21,9 @@ public class CoffeeCuccumelaPot extends CoffeePotBase {
             } else if (entity.isCanCook && entity.isFinish) {
                 ItemStack itemInHand = player.getItemInHand(hand).copy();
 
-                if (itemInHand.is(ItemInit.MAG.get()))
+                if (itemInHand.is(ItemInit.MUG.get()))
                     itemInHand = entity.isFail ? new ItemStack(CoffeeInit.FAIL_COFFEE.getMagItem().get()) : new ItemStack(CoffeeInit.DOUBLE_ESPRESSO.getMagItem().get());
-                else if (itemInHand.is(ItemInit.CAP.get()))
+                else if (itemInHand.is(ItemInit.CUP.get()))
                     itemInHand = entity.isFail ? new ItemStack(CoffeeInit.FAIL_COFFEE.getCapItem().get()) : new ItemStack(CoffeeInit.DOUBLE_ESPRESSO.getCapItem().get());
                 else return InteractionResult.PASS;
 

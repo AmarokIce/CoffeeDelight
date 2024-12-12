@@ -16,15 +16,15 @@ plugins {
 apply plugin: 'net.minecraftforge.gradle'
 // apply plugin: 'org.spongepowered.mixin'
 
-version = '1.3'
+version = '1.4'
 group = 'club.someoneice.coffee_delight'
-archivesBaseName = 'CoffeeDelight-Forge-1.18.2'
+archivesBaseName = 'CoffeeDelight-Forge-1.20.1'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
 minecraft {
-    mappings channel: 'official', version: '1.18.2'
+    mappings channel: 'official', version: '1.20.1'
 
     runs {
         client {
@@ -83,18 +83,18 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
-    // maven {
-    //     url "https://cursemaven.com"
-    // }
-
-    flatDir {
-        dir 'libs'
+    maven {
+        name = "CurseMaven"
+        url = "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
     }
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.18.2-40.1.60'
-    implementation fileTree(dir: 'libs', includes: ['*.jar'])
+    minecraft 'net.minecraftforge:forge:1.20.1-47.3.0'
+    implementation fg.deobf("curse.maven:FarmerDelight-398521:4679319")
 }
 
 jar {
