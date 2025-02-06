@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cooking",
+  "recipe_book_tab": "drinks",
+  "ingredients": [
+    {
+      "item": "coffee_delight:cup_latte_coffee"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "coffee_delight:cup_macchiato"
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}

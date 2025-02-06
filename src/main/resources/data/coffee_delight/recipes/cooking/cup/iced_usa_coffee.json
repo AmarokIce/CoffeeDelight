@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cooking",
+  "recipe_book_tab": "drinks",
+  "ingredients": [
+    {
+      "item": "coffee_delight:cup_usa_coffee"
+    },
+    {
+      "item": "minecraft:snowball"
+    }
+  ],
+  "result": {
+    "item": "coffee_delight:cup_iced_usa_coffee"
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}
