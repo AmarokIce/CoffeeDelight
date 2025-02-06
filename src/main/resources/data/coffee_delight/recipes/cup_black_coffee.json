@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "f",
+    "m",
+    "c"
+  ],
+  "key": {
+    "f": {
+      "item": "coffee_delight:coffee_flour"
+    },
+    "m": {
+      "item": "coffee_delight:mr_clever"
+    },
+    "c": {
+      "item": "coffee_delight:coffee_cup"
+    }
+  },
+  "result": {
+    "item": "coffee_delight:cup_black_coffee"
+  }
+}

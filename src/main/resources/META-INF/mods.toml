@@ -1,6 +1,7 @@
 modLoader="javafml"
 loaderVersion="[40,)"
 license="PINEAPPLE"
+
 [[mods]]
 modId="coffee_delight"
 version="${file.jarVersion}"
@@ -8,25 +9,23 @@ displayName="Coffee Delight"
 logoFile="CoffeeDelight.png"
 credits="Someoneice"
 authors="Someoneice"
-description='''
-'''
+description=""
+
 [[dependencies.coffee_delight]]
     modId="forge"
     mandatory=true
-    versionRange="[40,)"
+    versionRange="[*,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.coffee_delight]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.2,1.19)"
-    ordering="NONE"
-    side="BOTH"
+    versionRange="[1.20,1.20.6)"
 
 [[dependencies.coffee_delight]]
-modId="farmersdelight"
-mandatory=true
-versionRange="[*,)"
-ordering="NONE"
-side="BOTH"
+    modId="farmersdelight"
+    mandatory=true
+    versionRange="[*,)"
+    ordering="NONE"
+    side="BOTH"
