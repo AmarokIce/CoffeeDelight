@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "amount=1,facing=east": {
+      "model": "coffee_delight:block/mag",
+      "y": 90
+    },
+    "amount=1,facing=north": {
+      "model": "coffee_delight:block/mag"
+    },
+    "amount=1,facing=south": {
+      "model": "coffee_delight:block/mag",
+      "y": 180
+    },
+    "amount=1,facing=west": {
+      "model": "coffee_delight:block/mag",
+      "y": 270
+    },
+    "amount=2,facing=east": {
+      "model": "coffee_delight:block/mag",
+      "y": 90
+    },
+    "amount=2,facing=north": {
+      "model": "coffee_delight:block/mag"
+    },
+    "amount=2,facing=south": {
+      "model": "coffee_delight:block/mag",
+      "y": 180
+    },
+    "amount=2,facing=west": {
+      "model": "coffee_delight:block/mag",
+      "y": 270
+    },
+    "amount=3,facing=east": {
+      "model": "coffee_delight:block/mag",
+      "y": 90
+    },
+    "amount=3,facing=north": {
+      "model": "coffee_delight:block/mag"
+    },
+    "amount=3,facing=south": {
+      "model": "coffee_delight:block/mag",
+      "y": 180
+    },
+    "amount=3,facing=west": {
+      "model": "coffee_delight:block/mag",
+      "y": 270
+    }
+  }
+}

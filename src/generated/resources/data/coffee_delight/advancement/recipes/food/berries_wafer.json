@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "coffee_delight:berries_wafer"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wafer": {
+      "conditions": {
+        "items": [
+          {
+            "items": "coffee_delight:wafer"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_wafer"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "coffee_delight:berries_wafer"
+    ]
+  }
+}

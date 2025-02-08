@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:copper_ingot"
+    },
+    "%": {
+      "item": "minecraft:iron_ingot"
+    },
+    "*": {
+      "item": "minecraft:hopper"
+    },
+    "-": {
+      "item": "coffee_delight:cuccumela_bottom"
+    },
+    "x": {
+      "item": "coffee_delight:cuccumela_top"
+    }
+  },
+  "pattern": [
+    " x ",
+    "#*#",
+    "%-%"
+  ],
+  "result": {
+    "count": 1,
+    "id": "coffee_delight:cuccumela_pot"
+  }
+}

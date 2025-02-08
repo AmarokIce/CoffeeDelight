@@ -1,8 +1,10 @@
 {
 	"credit": "Made by someoneice",
+	"parent": "block/block",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "coffee_delight:block/cuccumela_pot"
+		"1": "coffee_delight:block/cuccumela_pot",
+		"particle": "#1"
 	},
 	"elements": [
 		{

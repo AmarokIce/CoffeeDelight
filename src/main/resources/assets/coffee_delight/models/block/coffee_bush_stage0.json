@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "coffee_delight:block/coffee_bush_stage0"
-  }
-}

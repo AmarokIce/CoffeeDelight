@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "*": {
+      "item": "minecraft:copper_ingot"
+    },
+    "@": {
+      "item": "minecraft:hopper"
+    }
+  },
+  "pattern": [
+    "#*#",
+    "#@#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "coffee_delight:moka_bottom"
+  }
+}
