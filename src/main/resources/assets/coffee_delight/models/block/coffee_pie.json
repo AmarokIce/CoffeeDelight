@@ -1,9 +1,0 @@
-{
-  "parent": "farmersdelight:block/pie",
-  "textures": {
-    "particle": "coffee_delight:block/coffee_pie_top",
-    "bottom": "coffee_delight:block/pie_bottom",
-    "side": "coffee_delight:block/pie_side",
-    "top": "coffee_delight:block/coffee_pie_top"
-  }
-}

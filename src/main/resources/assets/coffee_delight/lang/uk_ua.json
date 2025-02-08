@@ -1,7 +1,7 @@
 {
   "cofe.putOrEat.message": "Клацніть правою кнопкою миші, щоб поїсти, і натисніть Shift, щоб розмістити.",
 
-  "item_group.coffee_delight": "Coffee Delight",
+  "itemGroup.coffee_delight": "Coffee Delight",
   "block.coffee_delight.coffee_bush": "Кавові ягоди",
   "block.coffee_delight.coffee_block": "Мішечок кавових зерен",
   "item.coffee_delight.coffee_flour": "Кавове борошно",
@@ -39,7 +39,7 @@
   "block.coffee_delight.cap_usa_coffee": "Чашка американо",
   "block.coffee_delight.cap_macchiato": "Чашка макіато",
   "block.coffee_delight.cap_milk_coffee": "Чашка кави з молоком",
-  "block.coffee_delight.cap_iced_lattee_coffee": "Чашка холодного латте",
+  "block.coffee_delight.cap_iced_latte_coffee": "Чашка холодного латте",
   "block.coffee_delight.cap_iced_moka": "Чашка холодного мокко",
   "block.coffee_delight.cap_iced_cappuccino": "Чашка холодного капучіно",
   "block.coffee_delight.cap_iced_usa_coffee": "Чашка холодного американо",
@@ -58,7 +58,7 @@
   "block.coffee_delight.mag_usa_coffee": "Кружка американо",
   "block.coffee_delight.mag_macchiato": "Кружка макіато",
   "block.coffee_delight.mag_milk_coffee": "Кружка кави з молоком",
-  "block.coffee_delight.mag_iced_lattee_coffee": "Кружка холодного латте",
+  "block.coffee_delight.mag_iced_latte_coffee": "Кружка холодного латте",
   "block.coffee_delight.mag_iced_moka": "Кружка холодного мокко",
   "block.coffee_delight.mag_iced_cappuccino": "Кружка холодного капучіно",
   "block.coffee_delight.mag_iced_usa_coffee": "Кружка холодного американо",

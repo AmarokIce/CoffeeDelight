@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "coffee_delight:coffee_beans_cooked"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "coffee_delight:coffee_flour"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

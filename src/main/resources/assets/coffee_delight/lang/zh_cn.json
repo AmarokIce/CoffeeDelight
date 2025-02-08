@@ -1,7 +1,7 @@
 {
   "cofe.putOrEat.message": "右击食用，或蹲下放置。",
 
-  "item_group.coffee_delight": "咖啡乐事",
+  "itemGroup.coffee_delight": "咖啡乐事",
   "block.coffee_delight.coffee_bush": "咖啡浆果",
   "block.coffee_delight.coffee_block": "袋装咖啡豆",
   "item.coffee_delight.coffee_flour": "咖啡粉",
@@ -39,7 +39,7 @@
   "block.coffee_delight.cap_usa_coffee": "杯装美式咖啡",
   "block.coffee_delight.cap_macchiato": "杯装玛奇朵咖啡",
   "block.coffee_delight.cap_milk_coffee": "杯装加奶咖啡",
-  "block.coffee_delight.cap_iced_lattee_coffee": "杯装冰镇咖啡拿铁",
+  "block.coffee_delight.cap_iced_latte_coffee": "杯装冰镇咖啡拿铁",
   "block.coffee_delight.cap_iced_moka": "杯装冰镇摩卡咖啡",
   "block.coffee_delight.cap_iced_cappuccino": "杯装冰镇卡布奇诺",
   "block.coffee_delight.cap_iced_usa_coffee": "杯装冰美式咖啡",
@@ -58,7 +58,7 @@
   "block.coffee_delight.mag_usa_coffee": "马克杯装美式咖啡",
   "block.coffee_delight.mag_macchiato": "马克杯装玛奇朵咖啡",
   "block.coffee_delight.mag_milk_coffee": "马克杯装加奶咖啡",
-  "block.coffee_delight.mag_iced_lattee_coffee": "马克杯装冰镇咖啡拿铁",
+  "block.coffee_delight.mag_iced_latte_coffee": "马克杯装冰镇咖啡拿铁",
   "block.coffee_delight.mag_iced_moka": "马克杯装冰镇摩卡咖啡",
   "block.coffee_delight.mag_iced_cappuccino": "马克杯装冰镇卡布奇诺",
   "block.coffee_delight.mag_iced_usa_coffee": "马克杯装冰美式咖啡",

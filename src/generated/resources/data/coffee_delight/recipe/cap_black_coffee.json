@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "coffee_delight:coffee_flour"
+    },
+    "*": {
+      "item": "coffee_delight:mr_clever"
+    },
+    "^": {
+      "item": "coffee_delight:coffee_cap"
+    }
+  },
+  "pattern": [
+    " # ",
+    " * ",
+    " ^ "
+  ],
+  "result": {
+    "count": 1,
+    "id": "coffee_delight:cap_black_coffee"
+  }
+}
