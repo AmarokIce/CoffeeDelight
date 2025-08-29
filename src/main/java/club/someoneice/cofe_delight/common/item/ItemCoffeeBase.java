@@ -25,8 +25,9 @@ public class ItemCoffeeBase extends BlockItem {
     int time, level;
 
     public ItemCoffeeBase(Block block, int hunger, float saturation, ItemStack returnItem, MobEffect[] effects, int time, int level) {
-        super(block, new Properties().food(new FoodProperties.Builder().nutrition(hunger).saturationMod(saturation).alwaysEat().build()));
-        this.returnItem = returnItem == null ? ItemStack.EMPTY : returnItem;
+        super(block, new Properties()
+                .food(new FoodProperties.Builder().nutrition(hunger).saturationMod(saturation).alwaysEat().build()));
+        this.returnItem = returnItem;
         this.effects = effects;
         this.time = time;
         this.level = level;
@@ -52,7 +53,7 @@ public class ItemCoffeeBase extends BlockItem {
     public ItemStack finishUsingItem(ItemStack item, Level world, LivingEntity user) {
         super.finishUsingItem(item, world, user);
         if (user instanceof Player player) {
-            player.addItem(returnItem);
+            player.addItem(returnItem.copy());
             if (this.effects != null)
                 for (MobEffect effect : effects)
                     player.addEffect(new MobEffectInstance(effect, time, level));

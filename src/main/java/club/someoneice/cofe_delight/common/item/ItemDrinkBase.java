@@ -26,8 +26,9 @@ public class ItemDrinkBase extends Item {
     @Override
     public ItemStack finishUsingItem(ItemStack item, Level world, LivingEntity player) {
         super.finishUsingItem(item, world, player);
-        if (player instanceof Player && this.returnItem != ItemStack.EMPTY)
-            ((Player) player).addItem(returnItem);
+        if (player instanceof Player && !this.returnItem.isEmpty()) {
+            ((Player) player).addItem(returnItem.copy());
+        }
 
         return item;
     }
