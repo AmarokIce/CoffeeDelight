@@ -26,8 +26,8 @@
   "block.coffee_delight.moka_pot": "Moka Pot",
   "block.coffee_delight.cuccumela_pot": "Cuccumela Pot",
   "block.coffee_delight.turkey_pot": "Turkey Pot",
-  "block.coffee_delight.coffee_cap": "Cup",
-  "block.coffee_delight.coffee_mag": "Mug",
+  "block.coffee_delight.coffee_cup": "Cup",
+  "block.coffee_delight.coffee_mug": "Mug",
 
   "block.coffee_delight.cup_black_coffee": "Cup of Black Coffee",
   "block.coffee_delight.cup_double_espresso_coffee": "Cup of Double Espresso Coffee",

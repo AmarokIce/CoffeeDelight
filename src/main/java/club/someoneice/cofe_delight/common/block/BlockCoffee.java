@@ -17,7 +17,7 @@ import net.minecraft.world.phys.BlockHitResult;
 
 import javax.annotation.Nullable;
 
-public class BlockCoffee extends BlockCap {
+public class BlockCoffee extends BlockCup {
     float saturation;
     CupType cap;
     @Nullable MobEffect[] effects;

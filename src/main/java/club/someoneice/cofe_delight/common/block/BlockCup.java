@@ -19,11 +19,11 @@ import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BlockCap extends Block {
+public class BlockCup extends Block {
     public static final IntegerProperty AMOUNT = IntegerProperty.create("amount", 1, 3);
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
-    public BlockCap() {
+    public BlockCup() {
         super(Properties.of());
     }
 
