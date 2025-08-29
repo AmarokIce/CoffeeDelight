@@ -16,8 +16,8 @@ public class BlockInit {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CoffeeDelight.MODID);
 
     public static final RegistryObject<Block> COFFEE_PIE = BLOCKS.register("coffee_pie",  () -> new PieBlock(BlockBehaviour.Properties.of(),ItemInit.COFFEE_PIE_SIDE));
-    public static final RegistryObject<Block> COFFEE_CUP = BLOCKS.register("coffee_cap", BlockCup::new);
-    public static final RegistryObject<Block> COFFEE_MUG = BLOCKS.register("coffee_mag", BlockCup::new);
+    public static final RegistryObject<Block> COFFEE_CUP = BLOCKS.register("coffee_cup", BlockCup::new);
+    public static final RegistryObject<Block> COFFEE_MUG = BLOCKS.register("coffee_mug", BlockCup::new);
     public static final RegistryObject<Block> COFFEE_BUSH = BLOCKS.register("coffee_bush", CoffeeBush::new);
 
     public static final RegistryObject<Block> COFFEE_BLOCK = BLOCKS.register("coffee_block", () -> new Block(BlockBehaviour.Properties.of()));
